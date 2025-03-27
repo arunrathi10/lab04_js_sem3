@@ -82,11 +82,18 @@ function showTopFlavors(data) {
             ingredientList.appendChild(ingredientItem);
         });
         
-            // add the ingredient to the UL
+            
 
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
+        flavorCard.appendChild(flavorTitle);
+        flavorCard.appendChild(flavorImage);
+        flavorCard.appendChild(calorieInfo);
+        flavorCard.appendChild(flavorType);
+        flavorCard.appendChild(ingredientsHeading);
+        flavorCard.appendChild(ingredientList);
         
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
+        contentSection.appendChild(flavorCard);
     }); 
 };
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
