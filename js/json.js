@@ -1,5 +1,6 @@
 /* STEP 2: Reference the HEADER and the SECTION elements with variables */
-
+const pageHeader = document.querySelector('header');
+const contentSection = document.querySelector('section');
 
 // STEP 3a: Create the asynchronous function populate()
 
