@@ -31,6 +31,7 @@ async function populate () {
 
 
 // STEP 3b: Call the populate() function
+populate();
 
 
 /* STEP 9b: Build out the populateHeader() function */
