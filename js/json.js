@@ -42,6 +42,10 @@ function populateHeader() {
     heading.textContent = data.companyName;
     
     // Inject the complete H1 element into the DOM, inside the HEADER
+    const infoParagraph = document.createElement('p');
+    infoParagraph.textContent = Head Office: ${data.headOffice} | Established: ${data.established};
+    pageHeader.appendChild(heading);
+    pageHeader.appendChild(infoParagraph);
     
 };
 /* STEP 10b: Assemble the showTopFlavors() function */
