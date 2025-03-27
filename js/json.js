@@ -46,7 +46,6 @@ function populateHeader() {
     infoParagraph.textContent = `Head Office: ${data.headOffice} | Established: ${data.established}`;
     pageHeader.appendChild(heading);
     pageHeader.appendChild(infoParagraph);
-    
 };
 /* STEP 10b: Assemble the showTopFlavors() function */
 function showTopFlavors() {
