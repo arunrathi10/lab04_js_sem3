@@ -8,6 +8,7 @@ async function populate () {
 
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
+    const jsonUrl = 'js/i-scream.json';
     
     // STEP 5: Use the new URL to create a new request object
     
