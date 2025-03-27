@@ -14,8 +14,10 @@ async function populate () {
     const request = new Request(jsonUrl);
     
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
+    const jsonRespons = await fetch(request);
     
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
+    const iceCreamInfo = await jsonRespons.json();
     
     // STEP 8: Output the iScream JSON object to the console 
     
