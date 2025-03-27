@@ -67,6 +67,12 @@ function showTopFlavors(data) {
         
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
+        flavorTitle.textContent = flavor.name;
+        calorieInfo.textContent = `Calories: ${flavor.calories}`;
+        flavorType.textContent = `Type: ${flavor.type}`;
+        ingredientsHeading.textContent = "Ingredients:";
+        flavorImage.src = `images/${flavor.image}`;
+        flavorImage.alt = flavor.name;
         
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
