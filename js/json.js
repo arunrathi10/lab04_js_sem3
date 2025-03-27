@@ -57,6 +57,13 @@ function showTopFlavors(data) {
     flavorList.forEach(flavor => {
 
         // STEP 10e: build HTML elements for the content
+        const flavorCard = document.createElement('article');
+        const flavorTitle = document.createElement('h2');
+        const flavorImage = document.createElement('img');
+        const calorieInfo = document.createElement('p');
+        const flavorType = document.createElement('p');
+        const ingredientsHeading = document.createElement('p');
+        const ingredientList = document.createElement('ul');
         
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
