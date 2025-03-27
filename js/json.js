@@ -10,6 +10,16 @@ async function populate () {
     // STEP 4: Store the URL of a JSON file in a variable */
     const jsonUrl = 'js/i-scream.json';
     
+    /*
+  Attribution:-----
+  All used sources in this Assignment
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+  https://javascript.info/fetch
+  https://www.w3schools.com/jsref/met_node_appendchild.asp
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+  https://www.w3schools.com/js/js_json.asp
+  and weekly learning content
+  */
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(jsonUrl);
     
