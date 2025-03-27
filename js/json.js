@@ -76,6 +76,11 @@ function showTopFlavors(data) {
         
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
+        flavor.ingredients.forEach(item => {
+            const ingredientItem = document.createElement('li');
+            ingredientItem.textContent = item;
+            ingredientList.appendChild(ingredientItem);
+        });
         
             // add the ingredient to the UL
 
