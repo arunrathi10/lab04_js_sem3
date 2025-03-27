@@ -35,7 +35,7 @@ populate();
 
 
 /* STEP 9b: Build out the populateHeader() function */
-function populateHeader() {
+function populateHeader(data) {
     // Create the H1 element
     const heading = document.createElement('h1');
     // Grab the company name from the JSON object and use it for the text node
@@ -47,12 +47,15 @@ function populateHeader() {
     pageHeader.appendChild(heading);
     pageHeader.appendChild(infoParagraph);
 };
+
 /* STEP 10b: Assemble the showTopFlavors() function */
-function showTopFlavors() {
+function showTopFlavors(data) {
     // STEP 10c: Attache the JSON topFlavors object to a variable
-    //let topFlavors = jsonObj.topFlavors;
+    const flavorList = data.topFlavors;
+
     // STEP 10d: Loop through the topFlavors object
-    for (let i = 0; i < topFlavors.length; i ++) {
+    flavorList.forEach(flavor => {
+
         // STEP 10e: build HTML elements for the content
         
 
@@ -66,8 +69,7 @@ function showTopFlavors() {
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
         
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
-        
-    };
+    }); 
 };
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
 
