@@ -20,8 +20,10 @@ async function populate () {
     const iceCreamInfo = await jsonRespons.json();
     
     // STEP 8: Output the iScream JSON object to the console 
-    
+    console.log(iceCreamInfo);
+
     // STEP 9a: Invoke the populateHeader function here, then build it below
+    
     
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
 } 
