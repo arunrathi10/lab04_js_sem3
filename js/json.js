@@ -11,6 +11,7 @@ async function populate () {
     const jsonUrl = 'js/i-scream.json';
     
     // STEP 5: Use the new URL to create a new request object
+    const request = new Request(jsonUrl);
     
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
     
