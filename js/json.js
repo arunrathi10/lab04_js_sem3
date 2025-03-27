@@ -12,10 +12,10 @@ async function populate () {
     // path to the local JSON file
     
     // STEP 5: Use the new URL to create a new request object
-    const request = new Request(jsonUrl);
+    const request = new Request(jsonUrl); // Created a Request object for the JSON
     
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
-    const jsonRespons = await fetch(request);
+    const jsonRespons = await fetch(request); // Fetching the data from JSON file
     
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
     const iceCreamInfo = await jsonRespons.json();
@@ -24,11 +24,12 @@ async function populate () {
     console.log(iceCreamInfo);
 
     // STEP 9a: Invoke the populateHeader function here, then build it below
-    populateHeader(iceCreamInfo);
+    populateHeader(iceCreamInfo); // Calling function to populate the header
     
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
-    showTopFlavors(iceCreamInfo);
-} 
+    showTopFlavors(iceCreamInfo);  // Calling function to show flavors in the section
+}
+ 
 
 
 // STEP 3b: Call the populate() function
@@ -40,19 +41,19 @@ function populateHeader(data) {
     // Create the H1 element
     const heading = document.createElement('h1');
     // Grab the company name from the JSON object and use it for the text node
-    heading.textContent = data.companyName;
+    heading.textContent = data.companyName; // Set text from JSON data
     
     // Inject the complete H1 element into the DOM, inside the HEADER
     const infoParagraph = document.createElement('p');
-    infoParagraph.textContent = `Head Office: ${data.headOffice} | Established: ${data.established}`;
-    pageHeader.appendChild(heading);
+    infoParagraph.textContent = `Head Office: ${data.headOffice} | Established: ${data.established}`; // Add <h1> to <header>
+    pageHeader.appendChild(heading); // Add <p> to <header>
     pageHeader.appendChild(infoParagraph);
 };
 
 /* STEP 10b: Assemble the showTopFlavors() function */
 function showTopFlavors(data) {
     // STEP 10c: Attache the JSON topFlavors object to a variable
-    const flavorList = data.topFlavors;
+    const flavorList = data.topFlavors; // Store list of flavor objects
 
     // STEP 10d: Loop through the topFlavors object
     flavorList.forEach(flavor => {
@@ -78,9 +79,9 @@ function showTopFlavors(data) {
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
         flavor.ingredients.forEach(item => {
-            const ingredientItem = document.createElement('li');
-            ingredientItem.textContent = item;
-            ingredientList.appendChild(ingredientItem);
+            const ingredientItem = document.createElement('li'); // Each ingredient as <li>
+            ingredientItem.textContent = item; // Set ingredient name
+            ingredientList.appendChild(ingredientItem); // Add to <ul>
         });
         
             
@@ -94,7 +95,7 @@ function showTopFlavors(data) {
         flavorCard.appendChild(ingredientList);
         
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
-        contentSection.appendChild(flavorCard);
+        contentSection.appendChild(flavorCard); // Added flavor card to the main section
     }); 
 };
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
