@@ -20,11 +20,33 @@
       "calories" : 350,
       "type" : "sorbet",
       "ingredients" : [
-        "peach purée",
+        "peach puree",
         "mango chunks",
         "clover honey"
       ],
       "image" : "peach-mango.svg"
+    },
+    {
+      "name" : "Strawberry Swirl Dream",
+      "calories" : 300,
+      "type" : "ice cream",
+      "ingredients" : [
+        "Fresh strawberries",
+        "Vanilla",
+        "Whole milk"
+      ],
+      "image" : "ice-cream-xtra1.svg"
+    },
+    {
+      "name" : "Chocolate Fudge Delight",
+      "calories" : 250,
+      "type" : "ice cream",
+      "ingredients" : [
+        "Cocoa powder",
+        "Heavy cream",
+        "Chocolate chips"
+      ],
+      "image" : "ice-cream-xtra2.svg"
     }
   ]
 }
