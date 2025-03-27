@@ -9,17 +9,8 @@ async function populate () {
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
     const jsonUrl = 'js/i-scream.json';
+    // path to the local JSON file
     
-    /*
-  Attribution:-----
-  All used sources in this Assignment
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
-  https://javascript.info/fetch
-  https://www.w3schools.com/jsref/met_node_appendchild.asp
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
-  https://www.w3schools.com/js/js_json.asp
-  and weekly learning content
-  */
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(jsonUrl);
     
@@ -109,6 +100,16 @@ function showTopFlavors(data) {
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
 
 // STEP 12: Change the URL in STEP 3 to point to the JSON file in the local /js folder in order to prepare for today's lab
+/*
+  Attribution:-----
+  All used sources in this Assignment
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+  https://javascript.info/fetch
+  https://www.w3schools.com/jsref/met_node_appendchild.asp
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+  https://www.w3schools.com/js/js_json.asp
+  and weekly learning content
+  */
 
 // This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 
