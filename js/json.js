@@ -23,9 +23,10 @@ async function populate () {
     console.log(iceCreamInfo);
 
     // STEP 9a: Invoke the populateHeader function here, then build it below
-    
+    populateHeader(iceCreamInfo);
     
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
+    showTopFlavors(iceCreamInfo);
 } 
 
 
